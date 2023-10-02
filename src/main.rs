@@ -10,22 +10,25 @@ fn main() {
     let url: String;
 
     if args.len() != 2 {
-        url = "ipinfo.io/json".to_string();
+        url = "https://ipinfo.io/json".to_string();
     } else {
         let ip = &args[1];
-        url = format!("ipinfo.io/{ip}/json");
+        url = format!("https://ipinfo.io/{ip}/json");
     }
 
     println!("{}", url);
+
+
     let client = Client::new();
 
+    let resp: Value = client
+        .get(url)
+        .send()
+        .expect("Unable to send request")
+        .json()
+        .unwrap();
 
-    let res: Value = client
-    .get(url)
-    .send()
-    .expect("Unable to send request")
-    .json()
-    .unwrap();
+    println!("{}",&resp["ip"]);
 
 
 
