@@ -1,6 +1,6 @@
 use reqwest::blocking::Client;
 use serde_json::Value;
-use std::{env, ptr::null};
+use std::env;
 
 
 fn main() {
@@ -29,11 +29,6 @@ fn main() {
 
     if &resp["bogon"] == true {
         println!("Unable to find IP!");
-        return
-    }
-
-    if &resp["ip"] == null(){
-        println!("Invalid IP!");
         return
     }
 
