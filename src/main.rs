@@ -37,7 +37,7 @@ fn main() {
     println!("Region: {}",&resp["region"]);
     println!("Country: {}",&resp["country"]);
     println!("Location: {}",&resp["loc"]);
-    println!("Orginization: {}",&resp["org"]);
+    println!("Organization: {}",&resp["org"]);
     println!("Postal Code: {}",&resp["postal"]);
     println!("Timezone: {}",&resp["timezone"]);
 
