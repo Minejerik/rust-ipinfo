@@ -20,7 +20,7 @@ City: "Shenzhen"
 Region: "Guangdong"
 Country: "CN"
 Location: "22.5455,114.0683"
-Orginization: "AS45090 Shenzhen Tencent Computer Systems Company Limited"
+Organization: "AS45090 Shenzhen Tencent Computer Systems Company Limited"
 Postal Code: null
 Timezone: "Asia/Shanghai"
 ```
