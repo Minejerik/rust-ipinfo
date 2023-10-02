@@ -14,8 +14,6 @@ If you provide an IP it will get information for that IP, If you don't provide a
 
 # Example
 ```
-ipinfo -> returns information about your IP
-
 $ ipinfo 42.193.137.162
 IP: "42.193.137.162"
 City: "Shenzhen"
