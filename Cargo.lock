@@ -734,7 +734,7 @@ dependencies = [
 ]
 
 [[package]]
-name = "ipinfo"
+name = "temp"
 version = "0.1.0"
 dependencies = [
  "reqwest",
