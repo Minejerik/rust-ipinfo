@@ -16,8 +16,6 @@ fn main() {
         url = format!("https://ipinfo.io/{ip}/json");
     }
 
-    println!("{}", url);
-
 
     let client = Client::new();
 
@@ -27,6 +25,11 @@ fn main() {
         .expect("Ipinfo did a little trolling")
         .json()
         .unwrap();
+
+    if &resp["bogon"] == true {
+        println!("Unable to find IP!");
+        return
+    }
 
     println!("{}",&resp["ip"]);
 
