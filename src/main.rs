@@ -1,11 +1,10 @@
 use reqwest::blocking::Client;
+use serde_json::Value;
 use std::env;
 
 
 fn main() {
     let args: Vec<String> = env::args().collect();
-
-    let client = Client::new;
 
 
     let url: String;
@@ -18,4 +17,16 @@ fn main() {
     }
 
     println!("{}", url);
+    let client = Client::new();
+
+
+    let res: Value = client
+    .get(url)
+    .send()
+    .expect("Unable to send request")
+    .json()
+    .unwrap();
+
+
+
 }
