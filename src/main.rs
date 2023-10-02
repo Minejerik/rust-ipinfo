@@ -26,12 +26,20 @@ fn main() {
         .json()
         .unwrap();
 
+
     if &resp["bogon"] == true {
         println!("Unable to find IP!");
         return
     }
 
-    println!("{}",&resp["ip"]);
+    println!("IP: {}",&resp["ip"]);
+    println!("City: {}",&resp["city"]);
+    println!("Region: {}",&resp["region"]);
+    println!("Country: {}",&resp["country"]);
+    println!("Location: {}",&resp["loc"]);
+    println!("Orginization: {}",&resp["org"]);
+    println!("Postal Code: {}",&resp["postal"]);
+    println!("Timezone: {}",&resp["timezone"]);
 
 
 
