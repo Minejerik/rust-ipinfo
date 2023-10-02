@@ -16,9 +16,15 @@ If you provide an IP it will get information for that IP, If you don't provide a
 ```
 ipinfo -> returns information about your IP
 
-ipinfo 127.0.0.1 -> returns an error due to 127.0.0.1 being a loopback address
-
-ipinfo 592.910.239.723 -> returns all null values
+$ ipinfo 42.193.137.162
+IP: "42.193.137.162"
+City: "Shenzhen"
+Region: "Guangdong"
+Country: "CN"
+Location: "22.5455,114.0683"
+Orginization: "AS45090 Shenzhen Tencent Computer Systems Company Limited"
+Postal Code: null
+Timezone: "Asia/Shanghai"
 ```
 
 # Installation Guide
