@@ -24,7 +24,7 @@ fn main() {
     let resp: Value = client
         .get(url)
         .send()
-        .expect("Unable to send request")
+        .expect("Ipinfo did a little trolling")
         .json()
         .unwrap();
 
